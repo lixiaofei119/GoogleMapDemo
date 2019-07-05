@@ -3,12 +3,12 @@
 *.apk
 *.ap_
 /.idea
-/bolang/build
+/RetrofitDemo/build
 /app/class_files.txt
 /gradle
 # Files for the Dalvik VM
 *.dex
-bolang/build
+RetrofitDemo/build
 
 # Java class files
 *.class

@@ -3,12 +3,12 @@
 *.apk
 *.ap_
 /.idea
-/bolang/build
+/DownZipAndUp/build
 /app/class_files.txt
 /gradle
 # Files for the Dalvik VM
 *.dex
-bolang/build
+DownZipAndUp/build
 
 # Java class files
 *.class

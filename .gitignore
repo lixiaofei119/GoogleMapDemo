@@ -1,4 +1,3 @@
-
 *.iml
 .gradle
 /local.properties
@@ -11,7 +10,8 @@
 *.apk
 *.ap_
 /.idea
-/app/build 
+/app/build
+/app/class_files.txt
 /gradle
 # Files for the Dalvik VM
 *.dex
@@ -47,4 +47,3 @@ captures/
 *.iml
 
 # Keystore files
-
