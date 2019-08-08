@@ -1,1 +1,1 @@
-include ':app', ':bolang', ':DownZipAndUp', ':RetrofitDemo', ':bottomsheetdemo'
+include ':GoogleMap', ':bolang', ':DownZipAndUp', ':RetrofitDemo', ':bottomsheetdemo'
