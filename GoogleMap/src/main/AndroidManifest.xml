@@ -56,6 +56,15 @@
         <activity
             android:name=".ui.GoogleLocationWithServiceActivity"
             android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name=".service.SystemSportsService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.lxf.googlemapsdemo.service.SystemSportsService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

@@ -47,7 +47,6 @@ public class SystemLocationActivity extends AppCompatActivity implements OnMapRe
     private GoogleMap mMap;
     private TextView tvStatus;
     private FusedLocationProviderClient mFusedLocationClient;
-    private Location mLastKnownLocation;
     private ArrayList<LatLng> routeLists = new ArrayList<>();
     private LocationManager locationManager;
     private GpsStatus.Listener satelliteSignalListener;
@@ -448,8 +447,10 @@ public class SystemLocationActivity extends AppCompatActivity implements OnMapRe
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        editor.clear();
-        editor.commit();
+        if (editor != null) {
+            editor.clear();
+            editor.commit();
+        }
 
         if (satelliteSignalListener != null) {
             locationManager.removeGpsStatusListener(satelliteSignalListener);
